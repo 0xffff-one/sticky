@@ -15,7 +15,7 @@ export default function addStickyControl() {
       const firstPost = discussion.firstPost();
 
       if (firstPost) {
-        const excerpt = truncate(firstPost.contentPlain(), 175);
+        const excerpt = truncate(firstPost.contentPlain(), 80);
 
         items.add('excerpt', excerpt, -100);
       }
